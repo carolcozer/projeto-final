@@ -21,16 +21,16 @@ Este projeto é um sistema de gestão hospitalar com foco em uma interface web s
 ## Estrutura de Arquivos
 
 ```
-sghss-frontend
- ┣ index.html
- ┣ dashboard.html
- ┣ script.js
- ┣ styles.css
- ┣ cypress/
- ┃ ┣ e2e/
- ┃ ┃ ┗ form_test.cy.js
- ┣ package.json
- ┗ README.md
+📁 projeto-final/
+├── 📁 assets/                 # Imagens, ícones e outros arquivos estáticos
+├── 📁 cypress/                # Testes automatizados com Cypress
+├── .gitignore                # Arquivos e pastas ignoradas pelo Git
+├── README.md                 # Documentação do projeto
+├── cypress.config.js         # Configurações do Cypress
+├── dashboard.html            # Página de dashboard
+├── index.html                # Página inicial
+├── package.json              # Dependências e scripts do projeto
+├── package-lock.json         # (Ignorado pelo Git, gerado automaticamente)
 ```
 
 ## Executando o Projeto
