@@ -126,6 +126,79 @@ function loadContent(section) {
     <button onclick="loadContent('inicio')" class="btn-voltar">Voltar</button>`;
       break;
 
+    case "profissionais":
+      form = `
+    <h2>Cadastro de Profissionais</h2>
+    <form class="form-card">
+      <label>Nome:</label>
+      <input type="text" required pattern="[A-Za-zÀ-ÿ ']+">
+      <label>UF do CRM:</label>
+      <select required>
+        <option value="">Selecione</option>
+        ${estados.map((uf) => `<option>${uf}</option>`).join("")}
+      </select>
+      <label>CRM:</label>
+      <input type="text" required pattern="\\d{4,7}">
+      <label>Especialidade:</label>
+      <select required>
+        <option>Cardiologia</option>
+        <option>Cirurgia Geral</option>
+        <option>Clínica Médica</option>
+        <option>Dermatologia</option>
+        <option>Endocrinologia</option>
+        <option>Gastroenterologia</option>
+        <option>Geriatria</option>
+        <option>Ginecologia</option>
+        <option>Neurologia</option>
+        <option>Obstetrícia</option>
+        <option>Oftalmologia</option>
+        <option>Ortopedia</option>
+        <option>Pediatria</option>
+        <option>Psiquiatria</option>
+        <option>Reumatologia</option>
+        <option>Traumatologia</option>
+        <option>Urologia</option>
+      </select>
+      <button type="submit">Salvar</button>
+    </form>
+    <button onclick="loadContent('inicio')" class="btn-voltar">Voltar</button>
+  `;
+      break;
+
+    case "agendamentos":
+      form = `
+    <h2>Agendamentos</h2>
+    <form class="form-card">
+      <label>Paciente:</label>
+      <input type="text" required>
+      <label>Data da Consulta:</label>
+      <input type="date" required>
+      <label>Especialidade:</label>
+      <select required>
+        <option>Cardiologia</option>
+        <option>Cirurgia Geral</option>
+        <option>Clínica Médica</option>
+        <option>Dermatologia</option>
+        <option>Endocrinologia</option>
+        <option>Gastroenterologia</option>
+        <option>Geriatria</option>
+        <option>Ginecologia</option>
+        <option>Neurologia</option>
+        <option>Obstetrícia</option>
+        <option>Oftalmologia</option>
+        <option>Ortopedia</option>
+        <option>Pediatria</option>
+        <option>Psiquiatria</option>
+        <option>Reumatologia</option>
+        <option>Traumatologia</option>
+        <option>Urologia</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+    <button onclick="loadContent('inicio')" class="btn-voltar">Voltar</button>
+  `;
+      break;
+
     case "telemedicina":
       form = `
         <h2>Telemedicina</h2>
