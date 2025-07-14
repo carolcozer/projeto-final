@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGHSS - Cadastro de Pacientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Cadastro de Pacientes</h1>
+    <form id="formPacientes" class="form-card">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required pattern="[A-Za-zÀ-ÿ ']+">
+
+      <label for="dataNasc">Data de Nascimento:</label>
+      <input type="date" id="dataNasc" name="dataNasc" required max="2025-12-31">
+
+      <label for="cpf">CPF:</label>
+      <input type="text" class="cpf" id="cpf" name="cpf" placeholder="000.000.000-00" required maxlength="14">
+
+      <label for="plano">Plano de Saúde:</label>
+      <select id="plano" name="plano" required>
+        <option value="">Selecione</option>
+        <option>Alice Saúde</option>
+        <option>Allianz Saúde</option>
+        <option>Amil</option>
+        <option>Bradesco Saúde</option>
+        <option>Care Plus</option>
+        <option>Hapvida</option>
+        <option>NotreDame Intermédica</option>
+        <option>Porto Seguro Saúde</option>
+        <option>Seguros Unimed</option>
+        <option>SulAmérica Saúde</option>
+        <option>Unimed Vale dos Sinos</option>
+      </select>
+
+      <label for="especialidade">Especialidade:</label>
+      <select id="especialidade" name="especialidade" required>
+        <option value="">Selecione</option>
+        <option>Cardiologia</option>
+        <option>Cirurgia Geral</option>
+        <option>Clínica Médica</option>
+        <option>Dermatologia</option>
+        <option>Endocrinologia</option>
+        <option>Gastroenterologia</option>
+        <option>Geriatria</option>
+        <option>Ginecologia</option>
+        <option>Neurologia</option>
+        <option>Obstetrícia</option>
+        <option>Oftalmologia</option>
+        <option>Ortopedia</option>
+        <option>Pediatria</option>
+        <option>Psiquiatria</option>
+        <option>Reumatologia</option>
+        <option>Traumatologia</option>
+        <option>Urologia</option>
+      </select>
+
+      <label for="hospital">Nome do Hospital:</label>
+      <form id="formHospital">
+        <select id="hospital" name="hospital" required>
+          <option value="">Selecione</option>
+          <option>Clínica VidaMais</option>
+          <option>Hospital Aurora</option>
+          <option>Hospital Bem Viver</option>
+          <option>Hospital Central Vida</option>
+          <option>Hospital Esperança</option>
+          <option>Hospital Horizonte</option>
+          <option>Hospital Luz do Sol</option>
+          <option>Hospital Nova Saúde</option>
+          <option>Hospital Primavera</option>
+          <option>Hospital ProVida</option>
+          <option>Hospital São Rafael</option>
+          <option>Hospital Vida e Saúde</option>
+          <option>Instituto Médicos do Bem</option>
+          <option>Santa Casa Harmonia</option>
+          <option>Unidade Médica Horizonte</option>
+        </select>
+      </form>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

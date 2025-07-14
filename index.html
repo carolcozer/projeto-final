@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <title>SGHSS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">SGHSS</h1>
+    <h3 class="title-2">Sistema de Gestão Hospitalar e de Serviços de Saúde</h3>
+    <main id="mainContent" class="content">
+      <h2>Seja bem-vindo(a)</h2>
+      <p>Selecione abaixo uma funcionalidade:</p>
+    </main>
+    <nav class="navbar">
+      <button onclick="loadContent('pacientes')">Pacientes</button>
+      <button onclick="loadContent('profissionais')">Profissionais</button>
+      <button onclick="loadContent('agendamentos')">Agendamentos</button>
+      <button onclick="loadContent('telemedicina')">Telemedicina</button>
+      <button onclick="loadContent('admin')">Administração</button>
+    </nav>
+  </div>
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

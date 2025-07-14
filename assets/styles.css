@@ -1,0 +1,115 @@
+body {
+  font-family:Roboto;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.title-2 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #005fa3;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  color: #333;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.btn-voltar {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  margin: 15px auto 0 auto; /* centraliza horizontalmente */
+  cursor: pointer;
+  width: fit-content;
+  min-width: 100px;
+  display: block;
+  text-align: center;
+}
+
+.btn-voltar:hover {
+  background-color: #5a6268;
+}
