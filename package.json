@@ -1,0 +1,15 @@
+{
+  "name": "sghss",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão Hospitalar e de Serviços de Saúde",
+  "main": "script.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
