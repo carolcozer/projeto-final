@@ -22,8 +22,8 @@ Este projeto é um sistema de gestão hospitalar com foco em uma interface web s
 
 ```
 📁 projeto-final/
-├── 📁 assets/                 # Imagens, ícones e outros arquivos estáticos
-├── 📁 cypress/                # Testes automatizados com Cypress
+├── 📁 assets/                # Imagens, ícones e outros arquivos estáticos
+├── 📁 cypress/               # Testes automatizados com Cypress
 ├── .gitignore                # Arquivos e pastas ignoradas pelo Git
 ├── README.md                 # Documentação do projeto
 ├── cypress.config.js         # Configurações do Cypress
