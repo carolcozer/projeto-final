@@ -401,9 +401,6 @@ function showAdminSection(section) {
       adminContent.innerHTML = getAdminRelatorios();
       break;
   }
-
-  if (section === 'pacientes') initPacientesTable();
-  if (section === 'profissionais') initProfissionaisTable();
 }
 
 function getAdminPacientes() {
