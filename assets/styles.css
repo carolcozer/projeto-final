@@ -113,3 +113,213 @@ button:hover {
 .btn-voltar:hover {
   background-color: #5a6268;
 }
+
+
+/* Estilos gerais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title-2 {
+  color: #7f8c8d;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navbar button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos adicionais */
+.hint {
+  color: #7f8c8d;
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.btn-voltar {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+  background-color: #7f8c8d;
+}
+
+/* Estilos para a área de administração */
+.admin-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-btn {
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: 16px;
+}
+
+.admin-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.admin-btn i {
+  margin-right: 10px;
+}
+
+/* Estilos para tabelas */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.data-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 2px;
+  font-size: 14px;
+}
+
+.table-btn.edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+.table-btn.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.table-btn:hover {
+  opacity: 0.8;
+}
+
+/* Estilos para botões de exportação */
+.export-btn, .generate-btn {
+  padding: 10px 15px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.export-btn:hover, .generate-btn:hover {
+  background-color: #219653;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Estilos para relatórios */
+.report-result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.report-data {
+  margin-top: 15px;
+}
+
+.report-data p, .report-data ul {
+  margin: 10px 0;
+}
+
+.report-data ul {
+  padding-left: 20px;
+}
+
+/* Ícones (usando Font Awesome) */
+.fas {
+  margin-right: 5px;
+}
