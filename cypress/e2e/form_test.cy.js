@@ -24,4 +24,24 @@ describe('Testes do SGHSS', () => {
     cy.get('button[type=submit]').click();
     cy.get('.cpf:invalid').should('exist');
   });
+
+  it('CT003 - Impedir cadastro com CPF inválido', () => {
+    cy.visit('http://localhost:5500');
+    cy.contains('Pacientes').click();
+    cy.get('input[type=text]').eq(0).type('Carlos Souza');
+    cy.get('input[type=date]').type('1980-03-20');
+    cy.get('.cpf').type('12345678900');
+    cy.get('select').eq(0).select('Unimed');
+    cy.get('select').eq(1).select('Ortopedia');
+    cy.get('button[type=submit]').click();
+
+    cy.get('.cpf:invalid').should('exist');
+    cy.contains('CPF inválido').should('be.visible');
+
+    cy.on('window:alert', (txt) => {
+      throw new Error('Formulário não deveria ser enviado com CPF inválido');
+    });
+  });
+
+
 });
